@@ -8,17 +8,16 @@
   "options_page": "options.html",
 
   "permissions": [
-    "http://plex.tv/web/app",
-    "https://plex.tv/web/app",
-
+    "http://app.plex.tv/desktop",
+    "https://app.plex.tv/desktop",
     "storage", "tabs"
   ],
 
   "content_scripts": [
     {
       "matches": [
-        "http://plex.tv/web/app",
-        "https://plex.tv/web/app"
+        "http://app.plex.tv/desktop",
+        "https://app.plex.tv/desktop"
       ],
 
       "js": ["injector.js"],
